@@ -10,8 +10,18 @@
 <h2>Step 2: View my stuff</h2>
 
 <ul>
-    <li><%= link_to "Me", :action=>"show", :id=>"me"%></li>
+    <li><%= link_to "Me", :action=>"show", :id=>"me" %></li>
     <li><%= link_to "My News Feed", :action=>"show", :id=>"me", :type=>"home" %></li>
     <li><%= link_to "My Wall", :action=>"show", :id=>"me", :type=>"feed" %></li>
     <li><%= link_to "My Friends", :action=>"show", :id=>"me", :type=>"friends" %></li>
 </ul>
+
+<h2>Step 3: FQL</h2>
+
+Does anybody use FQL??
+
+<% form_tag :action=>"fql" do %>
+    Enter query:<br/>
+    <%= text_area_tag "q", "", :rows=>4, :cols=>50 %>
+    <%= submit_tag "Submit" %>
+<% end %>

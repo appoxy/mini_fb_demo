@@ -19,4 +19,11 @@ class WelcomeController < ApplicationController
         redirect_to :action=>"show", :id=>@id
     end
 
+    def fql
+        MiniFB.enable_logging
+        @res = MiniFB.fql(@access_token, params[:q])
+        render :action=>"show"
+    end
+
+
 end
