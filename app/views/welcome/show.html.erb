@@ -1,0 +1,9 @@
+<h1>Show</h1>
+
+<%= print_val @res %>
+
+<h2>Actions</h2>
+
+ONLY USE IF THIS IS A POST
+<br/><br/>
+<%= link_to "Like this post", :action=>"post", :id=>@id, :type=>"likes" %>

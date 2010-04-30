@@ -1,0 +1,17 @@
+<h1>mini_fb Test App</h1>
+
+<h2>Step 1: Login</h2>
+
+<% if @logged_in %>
+    You are already logged in.
+<% end %>
+<%= link_to "Login", @oauth_url %>
+
+<h2>Step 2: View my stuff</h2>
+
+<ul>
+    <li><%= link_to "Me", :action=>"show", :id=>"me"%></li>
+    <li><%= link_to "My News Feed", :action=>"show", :id=>"me", :type=>"home" %></li>
+    <li><%= link_to "My Wall", :action=>"show", :id=>"me", :type=>"feed" %></li>
+    <li><%= link_to "My Friends", :action=>"show", :id=>"me", :type=>"friends" %></li>
+</ul>
