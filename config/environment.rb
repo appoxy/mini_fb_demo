@@ -4,7 +4,7 @@
 #RAILS_GEM_VERSION = '2.3.5' unless defined? RAILS_GEM_VERSION
 
 # load fb info
-config = YAML::load(File.open(File.expand_path("~/.minifb-demo-config.txt")))
+config = YAML::load(File.open(File.expand_path("~/.minifb-demo-config.yml")))
 FB_API_KEY = config['fb_api_key']
 FB_SECRET = config['fb_secret']
 FB_APP_ID = config['fb_app_id']
