@@ -1,5 +1,5 @@
 
-This is a demo application for mini_fb http://github.com/appoxy/mini_fb
+This is a demo application for mini_fb [http://github.com/appoxy/mini_fb](http://github.com/appoxy/mini_fb)
 
 Getting Started
 ===============
