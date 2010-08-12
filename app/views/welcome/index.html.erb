@@ -16,7 +16,24 @@
     <li><%= link_to "My Friends", :action=>"show", :id=>"me", :type=>"friends" %></li>
 </ul>
 
-<h2>Step 3: FQL</h2>
+<h2>Step 3: Post Stuff</h2>
+
+<% form_tag :action=>"post" do %>
+
+    To: <%= select_tag "id", options_for_select(@post_tos) %>
+    <br/>
+
+    Type: <%= select_tag "type", options_for_select(@post_types) %>
+    <br/>
+
+    Msg: <%= text_area_tag "message" %>
+
+    <%= submit_tag "Post Away" %>
+    <br/>
+
+<% end %>
+
+<h2>Step 4: FQL</h2>
 
 Does anybody use FQL??
 
